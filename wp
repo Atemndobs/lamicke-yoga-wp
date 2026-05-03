@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WP_PHAR="$ROOT_DIR/.bin/wp-cli.phar"
+ENV_FILE="$ROOT_DIR/.env"
+
+if [[ ! -f "$WP_PHAR" ]]; then
+  echo "Missing $WP_PHAR"
+  echo "Run: ./scripts/setup-wp-cli.sh"
+  exit 1
+fi
+
+if [[ ! -f "$ENV_FILE" ]]; then
+  echo "Missing $ENV_FILE"
+  echo "Run: cp .env.example .env"
+  exit 1
+fi
+
+# shellcheck disable=SC1090
+source "$ENV_FILE"
+
+: "${WP_SITE_URL:?WP_SITE_URL is required in .env}"
+: "${WP_ADMIN_USER:?WP_ADMIN_USER is required in .env}"
+
+SECRET="${WP_APP_PASSWORD:-${WP_ADMIN_PASSWORD:-}}"
+if [[ -z "$SECRET" ]]; then
+  echo "Set WP_APP_PASSWORD (preferred) or WP_ADMIN_PASSWORD in .env"
+  exit 1
+fi
+
+SITE="${WP_SITE_URL%/}"
+SITE_NO_SCHEME="${SITE#https://}"
+SITE_NO_SCHEME="${SITE_NO_SCHEME#http://}"
+HTTP_URL="https://${WP_ADMIN_USER}:${SECRET}@${SITE_NO_SCHEME}"
+
+case "$HTTP_URL" in
+  */wp-json|*/wp-json/) ;;
+  *) HTTP_URL="${HTTP_URL%/}/wp-json/" ;;
+esac
+
+exec php -d error_reporting=E_ERROR "$WP_PHAR" --http="$HTTP_URL" --allow-root "$@"
