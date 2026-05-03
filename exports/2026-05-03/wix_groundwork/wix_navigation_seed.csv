@@ -1,0 +1,14 @@
+menu_name,menu_id,item_title,item_url,parent_item_title,sort_order,target_wix_menu,notes
+Primary menu,4,Home,https://lamickeyoga.com/,,1,main-navigation,
+Social menu,5,Facebook,https://www.facebook.com/lamicke,,1,social-links,exclude-social
+Primary menu,4,About,https://lamickeyoga.com/about/,,2,main-navigation,
+Social menu,5,Instagram,https://www.instagram.com/lamicke_yoga,,2,social-links,exclude-social
+Social menu,5,YouTube,https://www.youtube.com/channel/UCVzEN9rWHCXzvqz_a6OopFg,,3,social-links,exclude-social
+Primary menu,4,Classes,https://lamickeyoga.com/classes/,,3,main-navigation,
+Primary menu,4,pricing,https://lamickeyoga.com/pricing/,,4,main-navigation,
+Primary menu,4,Workshops &#038; Events,https://lamickeyoga.com/events/,,5,main-navigation,
+Primary menu,4,Corporate Yoga,https://lamickeyoga.com/corporate-yoga/,,6,main-navigation,
+Primary menu,4,Contact,https://lamickeyoga.com/contact/,,7,main-navigation,
+Primary menu,4,Shop,https://lamickeyoga.com/?page_id=2587,,8,main-navigation,
+Primary menu,4,German,https://lamickeyoga.com/language_switcher/german/,,9,main-navigation,exclude-language-switcher
+Primary menu,4,English,https://lamickeyoga.com/language_switcher/english/,,10,main-navigation,exclude-language-switcher

@@ -1,0 +1,14 @@
+order,slug,page_name,reason
+1,home,Home,Foundation template for shared sections
+2,classes,Classes,Core conversion page
+3,pricing,Pricing,Core conversion page
+4,contact,Contact,Form/lead capture page
+5,about,About,Primary trust page
+6,corporate-yoga,Corporate Yoga,B2B conversion page
+7,events,Events,Secondary conversion page
+8,privacy-policy,Privacy Policy,Legal requirement
+9,impressum,Impressum,Legal requirement
+10,blog,Blog,Optional if no posts migrate now
+11,cart,Cart,Only if store in phase-1
+12,checkout,Checkout,Only if store in phase-1
+13,my-account,My Account,Only if store in phase-1

@@ -1,0 +1,14 @@
+wp_slug,wp_link,wp_template,wp_page_type,wix_target_template,wix_app_dependency,priority,notes
+home,https://lamickeyoga.com/,elementor_header_footer,landing,Wix Home Page,None,P0,Hero + class highlights + testimonials + CTA
+about,https://lamickeyoga.com/about/,elementor_header_footer,content,Wix Standard Content Page,None,P0,Founder story + static sections
+classes,https://lamickeyoga.com/classes/,elementor_header_footer,content,Wix Standard Content Page,None,P0,Class timetable and CTAs
+pricing,https://lamickeyoga.com/pricing/,elementor_header_footer,content,Wix Pricing or Content Page,None,P0,Pricing cards and purchase CTAs
+contact,https://lamickeyoga.com/contact/,elementor_header_footer,contact,Wix Contact Page,Wix Forms,P0,Contact form + map/social links
+events,https://lamickeyoga.com/events/,elementor_header_footer,content,Wix Standard Content Page,None,P1,Workshops/events listing
+corporate-yoga,https://lamickeyoga.com/corporate-yoga/,elementor_header_footer,content,Wix Standard Content Page,None,P1,B2B service page
+blog,https://lamickeyoga.com/blog/,elementor_header_footer,blog_index,Wix Blog Index,Wix Blog,P1,Posts inventory currently zero
+privacy-policy,https://lamickeyoga.com/privacy-policy/,elementor_header_footer,legal,Wix Legal Page,None,P0,Keep legal text parity
+impressum,https://lamickeyoga.com/impressum/,elementor_header_footer,legal,Wix Legal Page,None,P0,Keep legal text parity
+cart,https://lamickeyoga.com/cart/,,ecommerce_system,Wix Cart Page,Wix Stores,P0_if_store,Needed only if commerce is in launch scope
+checkout,https://lamickeyoga.com/checkout/,,ecommerce_system,Wix Checkout Page,Wix Stores,P0_if_store,Needed only if commerce is in launch scope
+my-account,https://lamickeyoga.com/my-account/,,ecommerce_system,Wix Member Account or Store Account,Wix Stores,P0_if_store,Needed only if commerce is in launch scope

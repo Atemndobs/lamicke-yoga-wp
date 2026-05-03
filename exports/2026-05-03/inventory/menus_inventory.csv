@@ -1,0 +1,14 @@
+menu_item_id,menu_ids,menu_names,title,slug,url,type,object,object_id,parent,menu_order,status
+1063,4,Primary menu,Home,,https://lamickeyoga.com/,post_type,page,254,0,1,publish
+110,5,Social menu,Facebook,,https://www.facebook.com/lamicke,custom,custom,110,0,1,publish
+322,4,Primary menu,About,,https://lamickeyoga.com/about/,post_type,page,294,0,2,publish
+111,5,Social menu,Instagram,,https://www.instagram.com/lamicke_yoga,custom,custom,111,0,2,publish
+783,5,Social menu,YouTube,,https://www.youtube.com/channel/UCVzEN9rWHCXzvqz_a6OopFg,custom,custom,783,0,3,publish
+335,4,Primary menu,Classes,,https://lamickeyoga.com/classes/,post_type,page,323,0,3,publish
+2618,4,Primary menu,pricing,,https://lamickeyoga.com/pricing/,post_type,page,2616,0,4,publish
+2363,4,Primary menu,Workshops &#038; Events,,https://lamickeyoga.com/events/,post_type,page,2229,0,5,publish
+1219,4,Primary menu,Corporate Yoga,,https://lamickeyoga.com/corporate-yoga/,post_type,page,1213,0,6,publish
+458,4,Primary menu,Contact,,https://lamickeyoga.com/contact/,post_type,page,415,0,7,publish
+2589,4,Primary menu,Shop,,https://lamickeyoga.com/?page_id=2587,post_type,page,2587,0,8,publish
+880,4,Primary menu,German,,https://lamickeyoga.com/language_switcher/german/,post_type,language_switcher,879,0,9,publish
+881,4,Primary menu,English,,https://lamickeyoga.com/language_switcher/english/,post_type,language_switcher,877,0,10,publish

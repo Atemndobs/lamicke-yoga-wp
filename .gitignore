@@ -1,2 +1,27 @@
+# Secrets and local-only config
 .env
+.env.local
 .bin/
+.mcp.json
+
+# Out-of-band docs delivered separately (contain hosting/account details)
+docs/HOSTINGER_ENVIRONMENT_NOTES.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node
+node_modules/
+*.log
+
+# Heavy export artifacts (NOT committed — see docs/SETUP_FOR_LAMIKE.md for download links)
+exports/2026-05-03/lamickeyoga.com.zip
+exports/2026-05-03/db/
+exports/2026-05-03/site_files/
+
+# Wix automation script state (tokens, run logs)
+scripts/wix/state/
+scripts/wix/node_modules/
